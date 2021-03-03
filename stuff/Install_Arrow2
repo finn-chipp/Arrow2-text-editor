@@ -1,0 +1,36 @@
+#!/bin/bash
+read -p "What is your system of choice? [A]rch, [U]buntu: " sys
+echo "Finding current location..."
+dir=$(pwd)
+if [ ${sys^^} == "A" ]
+then
+	echo "Updating system..."
+	sudo pacman -Syyu
+	echo "Installing python3 if not already installed..."
+	sudo pacman -S python3
+elif [ ${sys^^} == "U" ]
+then
+	echo "Updating system..."
+	sudo apt update && sudo apt dist-upgrade
+	echo "Installing python3 if not already installed..."
+	sudo apt-get install python3
+else
+	echo "Abort!"
+	exit
+fi
+echo "Moving main components to /usr/bin..."
+sudo mv $dir/arrow2_main /usr/bin
+echo "Moving initiator to /usr/bin..."
+sudo mv $dir/arrow2 /usr/bin
+echo "Making initiator executable..."
+sudo chmod +x /usr/bin/arrow2
+echo "Moving .desktop launcher to /usr/share/applications..."
+sudo mv $dir/Arrow2.desktop /usr/share/applications
+echo "Making .desktop launcher executable..."
+sudo chmod +x /usr/share/applications/Arrow2.desktop
+echo "Moving uninstall script to /usr/bin..."
+sudo mv $dir/arrow2-uninstall /usr/bin
+echo "Making uninstall script executable..."
+sudo chmod +x /usr/bin/arrow2-uninstall
+echo "Installation is complete, run arrow by typing 'arrow' and uninstall it by running 'arrow-uninstall && sudo rm /usr/bin/arrow-uninstall'"
+echo "Running leftovers remover..."

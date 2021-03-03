@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=arrow2
+Name=Arrow2
+Comment=Super lightweight text editor for linux systems.
+Icon=/usr/bin/arrow2_main/arrow2logo.ico

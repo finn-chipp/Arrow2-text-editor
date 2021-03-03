@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /usr/bin/arrow2_main/start
+chmod +x start && ./start

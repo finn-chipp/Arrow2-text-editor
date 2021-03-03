@@ -1,0 +1,15 @@
+#!/bin/bash
+cd $(pwd)
+input="q-build"
+while IFS= read -r line
+do
+  x=$line
+done < "$input"
+if [[ $line == "0" ]]
+then
+  chmod +x build
+  ./build
+else
+  source kivy_venv/bin/activate
+  python3 kivyscript.py
+fi

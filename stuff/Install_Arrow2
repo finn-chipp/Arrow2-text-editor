@@ -33,4 +33,3 @@ sudo mv $dir/arrow2-uninstall /usr/bin
 echo "Making uninstall script executable..."
 sudo chmod +x /usr/bin/arrow2-uninstall
 echo "Installation is complete, run arrow by typing 'arrow' and uninstall it by running 'arrow-uninstall && sudo rm /usr/bin/arrow-uninstall'"
-echo "Running leftovers remover..."

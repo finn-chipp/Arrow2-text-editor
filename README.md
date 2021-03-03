@@ -6,7 +6,7 @@ To install (steps):
 
 1) Extract "arrow2-text-editor-main" to Downloads
 2) Open the terminal
-3) Type: cd ~/Downloads/arrow2-text-editor-main/stuff && chmod +x Install_Arrow2 && ./Install_Arrow2
+3) Type: cd ~/Downloads/Arrow2-text-editor-main/stuff && chmod +x Install_Arrow2 && ./Install_Arrow2
 
 Usage methods (either can be used):
 

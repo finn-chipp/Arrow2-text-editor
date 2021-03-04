@@ -8,16 +8,16 @@ then
 	sudo pacman -Syyu
 	echo "Installing python3 if not already installed..."
 	sudo pacman -S python3
-	echo "Installing pip3 if not already installed..."
-	sudo pacman -S python3-pip
+	echo "Installing pip if not already installed..."
+	sudo pacman -S python-pip
 elif [ ${sys^^} == "U" ]
 then
 	echo "Updating system..."
 	sudo apt update && sudo apt dist-upgrade
 	echo "Installing python3 if not already installed..."
 	sudo apt-get install python3
-	echo "Installing pip3 if not already installed..."
-	sudo apt-get install python3-pip
+	echo "Installing pip if not already installed..."
+	sudo apt-get install python-pip
 else
 	echo "Abort!"
 	exit

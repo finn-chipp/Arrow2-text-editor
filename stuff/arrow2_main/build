@@ -1,7 +1,7 @@
 #!/bin/bash
 cd $(pwd)
-python -m pip install --upgrade pip setuptools virtualenv
-python -m virtualenv kivy_venv
+python3 -m pip install --upgrade pip setuptools virtualenv
+python3 -m virtualenv kivy_venv
 source kivy_venv/bin/activate
-python -m pip install kivy[full]
+python3 -m pip install kivy[full]
 printf %s "1" > q-build

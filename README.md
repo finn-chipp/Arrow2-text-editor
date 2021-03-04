@@ -1,4 +1,4 @@
-# arrow-text-editor
+# Arrow2-text-editor
 
 Text editor with gui for Linux systems. Super lightweight and easy to use.
 

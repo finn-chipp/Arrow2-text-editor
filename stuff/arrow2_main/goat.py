@@ -10,4 +10,4 @@ def loadfile(filename):
 		f = open(filename, "r")
 		return (f.read())
 	except:
-		return ("File is presumed not to exist. If you have entered the name correctly then try using a file suffix (such as .py or .txt)")
+		print ("File is presumed not to exist. If you have entered the name correctly then try using a file suffix (such as .py or .txt)")

@@ -57,6 +57,7 @@ class main(GridLayout):
         location = directory+"/"+filename
         goat.quicksave(feed,location)
     def open(self, instance):
+        self.mainbox.text = ""
         directory = self.directory.text
         filename = self.filename.text
         feed = self.mainbox.text
